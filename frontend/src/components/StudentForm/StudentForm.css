@@ -1,0 +1,79 @@
+form {
+  background: #f3f4f6;
+  padding: 25px;
+  border-radius: 8px;
+  margin-bottom: 25px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+form h2 {
+  color: #2563eb;
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+  border-bottom: 2px solid #2563eb;
+  padding-bottom: 10px;
+}
+
+form p {
+  background: #fee;
+  color: #c00;
+  padding: 10px;
+  border-radius: 4px;
+  margin-bottom: 15px;
+  font-weight: 500;
+}
+
+form input,
+form select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 2px solid #d1d5db;
+  border-radius: 4px;
+  font-size: 14px;
+  font-family: Arial, sans-serif;
+  box-sizing: border-box;
+  transition: border-color 0.3s;
+}
+
+form input:focus,
+form select:focus {
+  outline: none;
+  border-color: #2563eb;
+}
+
+form input::placeholder {
+  color: #9ca3af;
+}
+
+form select {
+  cursor: pointer;
+  background-color: white;
+}
+
+form button[type="submit"] {
+  background: #2563eb;
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  transition: background-color 0.3s;
+  width: 100%;
+}
+
+form button[type="submit"]:hover {
+  background: #1d4ed8;
+}
+
+form button[type="submit"]:active {
+  background: #1e40af;
+  transform: scale(0.98);
+}
+
+form br {
+  display: none;
+}

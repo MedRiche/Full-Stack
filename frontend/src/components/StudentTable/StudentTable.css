@@ -1,0 +1,110 @@
+h2 {
+  color: #2563eb;
+  margin-bottom: 15px;
+  font-size: 1.3rem;
+}
+
+/* Boutons de tri */
+button:not(form button):not(table button) {
+  background: #e5e7eb;
+  color: black;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+  margin-right: 8px;
+  margin-bottom: 15px;
+  transition: all 0.3s;
+}
+
+button:not(form button):not(table button):hover {
+  background: #d1d5db;
+}
+
+button:not(form button):not(table button):active {
+  transform: scale(0.95);
+}
+
+/* Table */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+thead {
+  background: #2563eb;
+  color: white;
+}
+
+thead th {
+  padding: 14px 12px;
+  text-align: left;
+  font-weight: 600;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+tbody tr {
+  border-bottom: 1px solid #e5e7eb;
+  transition: background-color 0.2s;
+}
+
+tbody tr:hover {
+  background-color: #f9fafb;
+}
+
+tbody tr:last-child {
+  border-bottom: none;
+}
+
+tbody td {
+  padding: 14px 12px;
+  color: #374151;
+  font-size: 14px;
+}
+
+/* Bouton supprimer dans le tableau */
+table button {
+  background: #ef4444;
+  color: white;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: 500;
+  transition: all 0.3s;
+}
+
+table button:hover {
+  background: #dc2626;
+}
+
+table button:active {
+  background: #b91c1c;
+  transform: scale(0.95);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  table {
+    font-size: 12px;
+  }
+
+  thead th,
+  tbody td {
+    padding: 10px 8px;
+  }
+
+  table button {
+    padding: 6px 10px;
+    font-size: 12px;
+  }
+}
